@@ -7,15 +7,15 @@ Script decompiler for Fallout 1/2.
 
 - Originally implemented by **Anchorite** (2005-2009).
 - Rewritten for multiple platform support by [*alexeevdv*](https://github.com/alexeevdv) (2015).
-- Expanded for full [*sfall*](https://github.com/phobos2077/sfall) support by [*Nirran*](https://github.com/nirran), [*phobos2077*](https://github.com/nirran), [*Mr.Stalin*](https://github.com/FakelsHub) (2014-2020).
+- Expanded for full [*sfall*](https://github.com/phobos2077/sfall) support by [*Nirran*](https://github.com/nirran), [*phobos2077*](https://github.com/phobos2077), [*Mr.Stalin*](https://github.com/FakelsHub) (2014-2020).
 
 
-- [Installation](#installation)
+- [__Installation__](#installation)
   - [Windows](#windows)
   - [Ubuntu](#ubuntu)
   - [Other Linux](#other-linux)
   - [Building from source](#bilding-from-source)
-- [Usage](#usage)
+- [__Usage__](#usage)
 - [Changelog](CHANGELOG.md)
 
 
