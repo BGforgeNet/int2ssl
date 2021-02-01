@@ -70,7 +70,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       shell: bash
       run: |
-        sudo apt -qq -y install devscripts gpg
+        sudo apt-get -qq -y install devscripts debhelper gpg
         echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import
         export DEBFULLNAME="${{ steps.import_gpg.outputs.name }}"
         export DEBEMAIL="${{ steps.import_gpg.outputs.email }}"
