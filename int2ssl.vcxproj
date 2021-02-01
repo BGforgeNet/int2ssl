@@ -183,7 +183,7 @@
     <ClInclude Include="src\XGetopt.h" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="win2kcompat.asm">
+    <MASM Include="src\win2kcompat.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </MASM>

@@ -93,6 +93,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="win2kcompat.asm" />
+    <MASM Include="src\win2kcompat.asm" />
   </ItemGroup>
 </Project>
