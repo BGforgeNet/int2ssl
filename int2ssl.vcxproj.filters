@@ -14,81 +14,81 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FalloutScript.cpp">
+    <ClCompile Include="src\FalloutScript.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FalloutScriptDecompile.cpp">
+    <ClCompile Include="src\FalloutScriptDecompile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FalloutScriptDefObject.cpp">
+    <ClCompile Include="src\FalloutScriptDefObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FalloutScriptDump.cpp">
+    <ClCompile Include="src\FalloutScriptDump.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FalloutScriptStore.cpp">
+    <ClCompile Include="src\FalloutScriptStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Namespace.cpp">
+    <ClCompile Include="src\Namespace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Node.cpp">
+    <ClCompile Include="src\Node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Opcode.cpp">
+    <ClCompile Include="src\Opcode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OpcodeAttributes.cpp">
+    <ClCompile Include="src\OpcodeAttributes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProcTable.cpp">
+    <ClCompile Include="src\ProcTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StartupCode.cpp">
+    <ClCompile Include="src\StartupCode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Utility.cpp">
+    <ClCompile Include="src\Utility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="XGetopt.cpp">
+    <ClCompile Include="src\XGetopt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Hacks\CMap.h">
+    <ClInclude Include="src\Hacks\CMap.h">
       <Filter>Header Files\Hacks</Filter>
     </ClInclude>
-    <ClInclude Include="FalloutScript.h">
+    <ClInclude Include="src\FalloutScript.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Namespace.h">
+    <ClInclude Include="src\Namespace.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
+    <ClInclude Include="src\Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectAttributes.h">
+    <ClInclude Include="src\ObjectAttributes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Opcode.h">
+    <ClInclude Include="src\Opcode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ProcTable.h">
+    <ClInclude Include="src\ProcTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StartupCode.h">
+    <ClInclude Include="src\StartupCode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utility.h">
+    <ClInclude Include="src\Utility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="XGetopt.h">
+    <ClInclude Include="src\XGetopt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="main.h">
+    <ClInclude Include="src\main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
