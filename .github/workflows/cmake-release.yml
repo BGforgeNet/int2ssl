@@ -1,6 +1,9 @@
-name: CMake
+name: CMake release
 
-on: [push]
+on:
+  push:
+    tags:
+      - "v*"
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
@@ -16,13 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
-    # test
-    - name: Get tag name
-      uses: little-core-labs/get-git-tag@v3.0.2
-      id: tagName
-    - name: echo tag
-      run: echo "tag is $GIT_TAG_NAME"
 
     - name: Create Build Environment
       # Some projects don't allow in-source building, so create a separate build directory
@@ -57,3 +53,30 @@ jobs:
       with:
         name: release
         path: build/int2ssl
+
+    # release
+    - name: Get tag name
+      uses: little-core-labs/get-git-tag@v3.0.2
+      id: tagName
+
+    - name: Create release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ env.GIT_TAG_NAME }}
+        release_name: ${{ env.GIT_TAG_NAME }}
+        draft: false
+        prerelease: false
+
+    - name: Upload release asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: build/int2ssl
+        asset_name: int2ssl
+        asset_content_type: application/octet-stream
