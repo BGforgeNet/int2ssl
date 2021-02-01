@@ -57,3 +57,11 @@ jobs:
       with:
         name: release
         path: build/int2ssl
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: build/int2ssl
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
