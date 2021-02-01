@@ -22,7 +22,7 @@ jobs:
       uses: little-core-labs/get-git-tag@v3.0.2
       id: tagName
     - name: echo tag
-      run: tag is $GIT_TAG_NAME
+      run: echo "tag is $GIT_TAG_NAME"
 
     - name: Create Build Environment
       # Some projects don't allow in-source building, so create a separate build directory
