@@ -1,7 +1,4 @@
-# int2ssl
-[![windows](https://github.com/BGforgeNet/int2ssl/workflows/MSBuild/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3AMSBuild)
-[![linux](https://github.com/BGforgeNet/int2ssl/workflows/CMake/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3ACMake)
-[![Discord](https://img.shields.io/discord/401990446747877376.svg)](https://discord.gg/jxs6WRq)
+# int2ssl [![windows](https://github.com/BGforgeNet/int2ssl/workflows/MSBuild/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3AMSBuild) [![linux](https://github.com/BGforgeNet/int2ssl/workflows/CMake/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3ACMake) [![Discord](https://img.shields.io/discord/401990446747877376.svg)](https://discord.gg/jxs6WRq)
 
 Script decompiler for Fallout 1/2.
 
