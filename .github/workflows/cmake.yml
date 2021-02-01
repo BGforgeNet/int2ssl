@@ -72,8 +72,9 @@ jobs:
       run: |
         sudo apt-get install -qq -o=Dpkg::Use-Pty=0 devscripts debhelper gpg cmake expect >/dev/null 2>&1
         echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import
-        expect -c "spawn gpg --edit-key ${{ secrets.GPG_PRIVATE_KEY }} trust quit; send \"5\ry\r\"; expect eof"
+        export key_id=$(gpg --list-keys | grep -A1 pub | grep -v 'pub\|-' | awk '{print $1}')
         export DEBFULLNAME=$(gpg --list-keys | grep uid | awk '{print $5}')
         export DEBEMAIL=$(gpg --list-keys | grep uid | awk '{print $6}' | tr -d '<' | tr -d '>')
+        expect -c "spawn gpg --edit-key $key_id trust quit; send \"5\ry\r\"; expect eof"
         debuild -S -sa
         dput ppa:bgforge.net/ppa  ../int2ssl*source.changes
