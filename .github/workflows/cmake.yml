@@ -70,7 +70,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       shell: bash
       run: |
-        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 devscripts debhelper gpg cmake >/dev/null 2>&1
+        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 devscripts debhelper gpg cmake expect >/dev/null 2>&1
         echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import
         expect -c "spawn gpg --edit-key ${{ secrets.GPG_PRIVATE_KEY }} trust quit; send \"5\ry\r\"; expect eof"
         export DEBFULLNAME=$(gpg --list-keys | grep uid | awk '{print $5}')
