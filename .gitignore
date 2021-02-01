@@ -14,5 +14,6 @@ int2ssl
 nbproject/
 Release/
 Debug/
-.idea/
+.idea
+/cmake-build-debug
 .vs/

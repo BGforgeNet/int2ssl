@@ -154,36 +154,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FalloutScript.cpp" />
-    <ClCompile Include="FalloutScriptDecompile.cpp" />
-    <ClCompile Include="FalloutScriptDefObject.cpp" />
-    <ClCompile Include="FalloutScriptDump.cpp" />
-    <ClCompile Include="FalloutScriptStore.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Namespace.cpp" />
-    <ClCompile Include="Node.cpp" />
-    <ClCompile Include="Opcode.cpp" />
-    <ClCompile Include="OpcodeAttributes.cpp" />
-    <ClCompile Include="ProcTable.cpp" />
-    <ClCompile Include="StartupCode.cpp" />
-    <ClCompile Include="Utility.cpp" />
-    <ClCompile Include="XGetopt.cpp" />
+    <ClCompile Include="src\FalloutScript.cpp" />
+    <ClCompile Include="src\FalloutScriptDecompile.cpp" />
+    <ClCompile Include="src\FalloutScriptDefObject.cpp" />
+    <ClCompile Include="src\FalloutScriptDump.cpp" />
+    <ClCompile Include="src\FalloutScriptStore.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Namespace.cpp" />
+    <ClCompile Include="src\Node.cpp" />
+    <ClCompile Include="src\Opcode.cpp" />
+    <ClCompile Include="src\OpcodeAttributes.cpp" />
+    <ClCompile Include="src\ProcTable.cpp" />
+    <ClCompile Include="src\StartupCode.cpp" />
+    <ClCompile Include="src\Utility.cpp" />
+    <ClCompile Include="src\XGetopt.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FalloutScript.h" />
-    <ClInclude Include="Hacks\CMap.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="Namespace.h" />
-    <ClInclude Include="Node.h" />
-    <ClInclude Include="ObjectAttributes.h" />
-    <ClInclude Include="Opcode.h" />
-    <ClInclude Include="ProcTable.h" />
-    <ClInclude Include="StartupCode.h" />
-    <ClInclude Include="Utility.h" />
-    <ClInclude Include="XGetopt.h" />
+    <ClInclude Include="src\FalloutScript.h" />
+    <ClInclude Include="src\Hacks\CMap.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="src\Namespace.h" />
+    <ClInclude Include="src\Node.h" />
+    <ClInclude Include="src\ObjectAttributes.h" />
+    <ClInclude Include="src\Opcode.h" />
+    <ClInclude Include="src\ProcTable.h" />
+    <ClInclude Include="src\StartupCode.h" />
+    <ClInclude Include="src\Utility.h" />
+    <ClInclude Include="src\XGetopt.h" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="win2kcompat.asm">
+    <MASM Include="src\win2kcompat.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </MASM>
