@@ -1,42 +1,49 @@
-int2ssl [![Build Status](https://travis-ci.org/falltergeist/int2ssl.svg?branch=develop)](https://travis-ci.org/falltergeist/int2ssl) [![Version](https://img.shields.io/github/release/falltergeist/int2ssl.svg)](https://github.com/falltergeist/int2ssl/releases/latest) [![Discord](https://img.shields.io/discord/401990446747877376.svg)](https://discord.gg/jxs6WRq)
-==========
+# int2ssl
+
+[![windows](https://github.com/BGforgeNet/int2ssl/workflows/msbuild/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3Amsbuild)
+[![linux](https://github.com/BGforgeNet/int2ssl/workflows/cmake/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3Acmake)
+[![Discord](https://img.shields.io/discord/401990446747877376.svg)](https://discord.gg/jxs6WRq)
 
 Script decompiler for Fallout 1/2.
 
-Originally implemented by **Anchorite** (2005-2009).
+- Originally implemented by **Anchorite** (2005-2009).
+- Rewritten for multiple platform support by [*alexeevdv*](https://github.com/alexeevdv) (2015).
+- Expanded for full [*sfall*](https://github.com/phobos2077/sfall) support by [*Nirran*](https://github.com/nirran), [*phobos2077*](https://github.com/nirran), [*Mr.Stalin*](https://github.com/FakelsHub) (2014-2020).
 
-Expanded for full *sfall* support by *Nirran*, *phobos2077*, *Mr.Stalin* (2014-2020).
+- [Installation](#installation)
+  - [Windows](#windows)
+  - [Ubuntu](#ubuntu)
+  - [Other Linux](#other-linux)
+  - [Building from source](#bilding-from-source)
+- [Usage](#usage)
+- [Changelog](CHANGELOG.md)
 
-Rewritten for multiple platform support by *alexeevdv* (2015).
 
-Installation:
-=============
+## Installation
 
-Ubuntu:
--------
+### Windows
+
+Download `int2ssl.exe` from the [latest release](https://github.com/BGforgeNet/int2ssl/releases/latest) page.
+
+### Ubuntu
+
 ```bash
-sudo add-apt-repository ppa:falltergeist/falltergeist
-sudo apt-get update
-sudo apt-get install int2ssl
+sudo add-apt-repository ppa:bgforge.net/ppa
+sudo apt install int2ssl
 ```
 
-Building from source:
-=====================
+### Other Linux
+Download `int2ssl` binary from the [latest release](https://github.com/BGforgeNet/int2ssl/releases/latest) page.
 
-Dependencies:
--------------
+### Building from source
 
-- CMake (>= 2.8)
-
-Build:
-------
+Dependencies: Cmake (>=2.8).
 
 ```bash
 mkdir build && cd build && cmake .. && make
 ```
 
-Usage:
-======
+## Usage
 
 ```
 Usage: ./int2ssl [options] [-s value] file.int [file.ssl]
