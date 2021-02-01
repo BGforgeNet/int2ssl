@@ -1,4 +1,4 @@
-int2ssl (8.4.6-1~focalubuntu1) UNRELEASED; urgency=medium
+int2ssl (8.4.6-1~focalubuntu1) focal; urgency=medium
 
   * Added support for additional universal opcodes sfall_func7 and sfall_func8
   * (8.4.5) Added new logical operators AndAlso, OrElse
@@ -6,9 +6,7 @@ int2ssl (8.4.6-1~focalubuntu1) UNRELEASED; urgency=medium
   * (8.4.4) Added support for new opcodes register_hook_proc_spec, reg_anim_callback
   * Port to focal
 
- -- Magus <magus@bgforge.net>  Mon, 01 Feb 2021 22:24:36 +0700
-
-8.4.4
+ -- Magus <magus@bgforge.net>  Mon, 01 Feb 2021 23:28:44 +0700
 
 int2ssl (8.4.4-1~artful) artful; urgency=medium
 
