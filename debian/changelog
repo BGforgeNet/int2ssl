@@ -1,3 +1,9 @@
+int2ssl (8.4.6-2~focalubuntu2) focal; urgency=medium
+
+  * Rebuilt deb package for Launchpad
+
+ -- Magus <magus@bgforge.net>  Tue, 02 Feb 2021 05:18:24 +0700
+
 int2ssl (8.4.6-1~focalubuntu1) focal; urgency=medium
 
   * Added support for additional universal opcodes sfall_func7 and sfall_func8
