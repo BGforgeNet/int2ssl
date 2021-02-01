@@ -70,7 +70,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       shell: bash
       run: |
-        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 devscripts debhelper gpg cmake
+        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 devscripts debhelper gpg cmake >/dev/null 2>&1
         echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import
         export DEBFULLNAME=$(gpg --list-keys | grep uid | awk '{print $5}')
         export DEBEMAIL=$(gpg --list-keys | grep uid | awk '{print $6}' | tr -d '<' | tr -d '>')
