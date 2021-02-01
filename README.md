@@ -1,6 +1,6 @@
 # int2ssl
-[![windows](https://github.com/BGforgeNet/int2ssl/workflows/msbuild/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3AMSBuild)
-[![linux](https://github.com/BGforgeNet/int2ssl/workflows/cmake/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3ACMake)
+[![windows](https://github.com/BGforgeNet/int2ssl/workflows/MSBuild/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3AMSBuild)
+[![linux](https://github.com/BGforgeNet/int2ssl/workflows/CMake/badge.svg)](https://github.com/BGforgeNet/int2ssl/actions?query=workflow%3ACMake)
 [![Discord](https://img.shields.io/discord/401990446747877376.svg)](https://discord.gg/jxs6WRq)
 
 Script decompiler for Fallout 1/2.
@@ -8,6 +8,7 @@ Script decompiler for Fallout 1/2.
 - Originally implemented by **Anchorite** (2005-2009).
 - Rewritten for multiple platform support by [*alexeevdv*](https://github.com/alexeevdv) (2015).
 - Expanded for full [*sfall*](https://github.com/phobos2077/sfall) support by [*Nirran*](https://github.com/nirran), [*phobos2077*](https://github.com/nirran), [*Mr.Stalin*](https://github.com/FakelsHub) (2014-2020).
+
 
 - [Installation](#installation)
   - [Windows](#windows)
